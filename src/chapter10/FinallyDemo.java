@@ -40,6 +40,7 @@ public class FinallyDemo {
             procA();
         } catch (Exception e) {
             System.out.println("Exception caught " + e);
+            e.printStackTrace();
         }
         procB();
         procC();

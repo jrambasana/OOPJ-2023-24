@@ -12,13 +12,14 @@ public class SuperSubCatch {
         try {
             int a = 0;
             int b = 42 / a;
-        } catch (Exception e) {
+        } 
+        catch (ArithmeticException e){
+            System.out.println("This is never reached");
+
+        }
+        catch (Exception e) {
             System.out.println("Generic Exception Catch");
         }
         //This catch is never reached because ArithmeticException is subclass of Exception
-        /*catch (ArithmeticException e){
-            System.out.println("This is never reached");
-
-        }*/
     }
 }

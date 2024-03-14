@@ -3,7 +3,7 @@ package chapter10;
 //Demonstrate the multi catch future
 public class MultiCatch {
     public static void main(String[] args) {
-        int a = 10, b = 0;
+        int a = 10, b = 2;
         int vals[] = {1, 2, 3};
         try {
             int result = a / b;// generate an ArithmeticException
